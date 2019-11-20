@@ -53,7 +53,6 @@ docker run -d \
 echo "[BoxOS]   - adsbexchange-mlat-client"
 docker run -d \
   -v run-dump1090-fa:/run/dump1090-fa \
-  -p 8081:80/tcp \
   -e INPUT_CONNECT="host:30005" \
   -e LATITUDE="${LATITUDE}" \
   -e LONGITUDE="${LONGITUDE}" \
