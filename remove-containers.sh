@@ -3,7 +3,7 @@
 #
 # remove-containers.sh
 #
-# Stop and remove all of the defined Docker containers
+# Stops and removes all of the defined Docker containers
 #
 
 # TODO: Generate this from the boxos.json definition file
