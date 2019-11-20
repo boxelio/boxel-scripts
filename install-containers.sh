@@ -47,7 +47,7 @@ docker run -d \
   --add-host docker-gateway:${DOCKER_GATEWAY_IP} \
   --restart unless-stopped \
   --name flightaware-dump1090 \
-  boxel/flightaware-dump1090:latest
+  boxel/flightaware-dump1090:latest 2>&1 >> /tmp/boxel-extra.log
 
 # adsbexchange-mlat-client
 echo "[BoxOS]   - adsbexchange-mlat-client"
@@ -65,7 +65,7 @@ docker run -d \
   --add-host docker-gateway:${DOCKER_GATEWAY_IP} \
   --restart unless-stopped \
   --name adsbexchange-mlat-client \
-  boxel/adsbexchange-mlat-client:latest
+  boxel/adsbexchange-mlat-client:latest 2>&1 >> /tmp/boxel-extra.log
 
 # flightaware-skyview1090
 echo "[BoxOS]   - flightaware-skyview1090"
@@ -79,7 +79,7 @@ docker run -d \
   --add-host docker-gateway:${DOCKER_GATEWAY_IP} \
   --restart unless-stopped \
   --name flightaware-skyview1090 \
-  boxel/flightaware-skyview1090:latest
+  boxel/flightaware-skyview1090:latest 2>&1 >> /tmp/boxel-extra.log
 
 # wiedehopf-tar1090
 echo "[BoxOS]   - wiedehopf-tar1090"
@@ -92,6 +92,6 @@ docker run -d \
   --add-host docker-gateway:${DOCKER_GATEWAY_IP} \
   --restart unless-stopped \
   --name wiedehopf-tar1090 \
-  boxel/wiedehopf-tar1090:latest
+  boxel/wiedehopf-tar1090:latest 2>&1 >> /tmp/boxel-extra.log
 
 echo "[BoxOS] Installation of Boxel components complete."

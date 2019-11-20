@@ -7,4 +7,4 @@
 #
 
 echo "[BoxOS] Installing Docker"
-curl -fsSL https://get.docker.com | sh
+curl -fsSL https://get.docker.com | sh 2>&1 >> /tmp/boxel-docker-install.log

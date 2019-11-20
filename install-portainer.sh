@@ -13,7 +13,7 @@ docker run -d \
   -v portainer_data:/data \
   --restart always \
   --name portainer \
-  portainer/portainer
+  portainer/portainer 2>&1 >> /tmp/boxel-install-portainer.log
 
 echo "[BoxOS] Portainer installed and running at http://localhost:9000/"
 echo "[BoxOS] Login and finish setting up Portainer."
