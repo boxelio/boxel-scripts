@@ -6,5 +6,7 @@
 # Retrieves and intalls Docker on Ubuntu
 #
 
+apt remove docker docker-engine docker.io containerd runc docker-ce
+
 echo "[BoxOS] Installing Docker"
 curl -fsSL https://get.docker.com | sh 2>&1 >> /tmp/boxel-docker-install.log
