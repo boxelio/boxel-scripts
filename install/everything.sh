@@ -7,6 +7,6 @@
 #
 
 echo "[BoxOS] Installing Boxel..."
-./base.sh
-./units/containers.sh
+./install/base.sh
+./install/units/containers.sh
 echo "[BoxOS] Boxel installation complete."
